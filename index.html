@@ -47,19 +47,19 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF]">
     <!-- nav bar -->
     <header class="container mx-auto">
-      <nav class="pt-12 pb-14">
-        <div class="navbar justify-between">
+      <nav class="lg:pt-12 pt-6 pb-14">
+        <div class="navbar justify-between items-center">
           <!-- logo -->
           <div class="navbar-start">
             <div class="flex items-center gap-2">
-              <button
+              <div
                 class="btn btn-circle btn bg-primary-col -rotate-45 text-xl font-thin"
               >
                 <i class="fa-solid fa-arrow-right"></i>
-              </button>
+              </div>
               <h1 class="font-extrabold text-3xl">Rinterio</h1>
             </div>
           </div>
@@ -87,8 +87,8 @@
             >
               <i class="fa-solid fa-cart-shopping"></i>
             </button>
-            <div
-              class="btnfont-bold text-xl bg-primary-col rounded-3xl btn-lg btn flex items-center gap-2"
+            <button
+              class="btnfont-bold text-xl bg-primary-col rounded-[32px] btn-lg btn flex items-center gap-2"
             >
               <a class="font-extrabold text-xl">Book Consult</a>
               <div
@@ -96,13 +96,17 @@
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
-            </div>
+            </button>
           </div>
 
           <!-- mobile -->
           <div class="">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn bg-white rounded-full shadow-sm lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -122,16 +126,49 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-1 w-36 p-2 shadow relative -left-28"
               >
-                <li><a>Home</a></li>
-
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
+                <li class="text-[rgb(73, 73, 73)] font-bold"><a>Home</a></li>
+                <li class="text-[#737373]"><a>Service</a></li>
+                <li class="text-[#737373]"><a>Portfolio</a></li>
+                <li class="text-[#737373]"><a>Blogs</a></li>
+                <li class="text-[#737373]"><a>Contact Us</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- main section -->
+
+    <main class="container mx-auto">
+      <!-- banner section -->
+      <section class="p-3 lg:mb-32 mb-16">
+        <div class="mb-6">
+          <!-- image -->
+          <img class="mx-auto" src="assets/banner.png" alt="banner" />
+        </div>
+        <!-- text -->
+        <div class="text-center lg:w-3/4 lg:mx-auto">
+          <h1 class="lg:text-[64px] text-[28px] font-extrabold mb-6">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p
+            class="lg:text-base text-sm font-medium text-[#494949] mb-8 lg:w-4/5 lg:mx-auto"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button
+            class="btn btn-lg rounded-[32px] bg-secondary-col w-full lg:w-[20%]"
+          >
+            <span class="font-bold text-xl">View Details</span>
+            <div class="btn btn-circle btn bg-primary-col -rotate-45 font-thin">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
